@@ -2,6 +2,7 @@ package com.pages;
 
 import com.driver.DriverInstance;
 import io.qameta.allure.Step;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -101,10 +102,9 @@ public class HomePage {
     }
 
     @Step
-    public void goToSiteGmail() {
+    public void goToSiteGmail()  {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[.='Stack Overflow']")));
         driver.get(ENTER_TO_GMAIL);
-        driver.get(ENTER_TO_GMAIL);
-
 
     }
 

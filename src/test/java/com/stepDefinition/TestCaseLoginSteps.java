@@ -55,7 +55,7 @@ public class TestCaseLoginSteps {
 
     @Step
     @Given("^user wants to go to Gmail, enter: recipient, subject, number of letters from the user and send a letter$")
-    public void launchBoxApp2() {
+    public void launchBoxApp2()  {
         homePage.goToSiteGmail();
         homePage.buttonCreateLetter();
         homePage.recipientInputField();
