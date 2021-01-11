@@ -91,7 +91,7 @@ public class HomePage {
 
     @Step
     public void buttonAfterPassword() {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"passwordNext\"]/div/button/div[2]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[.='Далее']")));
         buttonAfterPassword.click();
     }
 
